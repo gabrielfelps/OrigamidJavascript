@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHUCK NORRIS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-inline: 20px;
+      height: 100vh;
+    }
+
+    q {
+      font-size: 0.75rem;
+
+    }
+
+    h1,
+    q {
+      text-align: center;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      max-width: 400px;
+      margin: auto;
+    }
+  </style>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Piadas do Chuck Norris</h1>
+    <q data-quote></q>
+    <button data-btn>Próxima</button>
+  </div>
+</body>
+
+</html>

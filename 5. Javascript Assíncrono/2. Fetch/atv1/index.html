@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEP</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      display: flex;
+      gap: 3px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    pre {
+      position: absolute;
+      top: 178px;
+      left: 92px;
+    }
+
+    pre.active {
+      animation: push-down 150ms ease-in-out forwards;
+    }
+
+    @keyframes push-down {
+      from {
+        opacity: 0;
+        transform: translate3d(0, -5px, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  </style>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <form name="cepForm" action="">
+    <div>
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" placeholder="Digite seu CEP">
+    </div>
+
+    <button id="cepBtn">Procurar</button>
+  </form>
+
+  <pre id="searchText"></pre>
+</body>
+
+</html>
