@@ -1,4 +1,4 @@
-const path = requestIdleCallback('patch');
+const path = require('path');
 
 module.exports = {
   entry: './scripts/script.js',
