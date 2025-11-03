@@ -4,3 +4,6 @@
 # Logs
 npm-debug.log*
 .eslintcache
+
+# Build
+/main.js
