@@ -1,0 +1,9 @@
+# Dependências
+/node_modules
+
+# Logs
+npm-debug.log*
+.eslintcache
+
+# Build
+/main.js
