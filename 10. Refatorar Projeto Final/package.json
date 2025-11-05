@@ -1,14 +1,12 @@
 {
-  "name": "1.-eslint",
+  "name": "animais-fantasticos",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "gabrielfelps",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.28.5",
