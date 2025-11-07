@@ -1,5 +1,5 @@
 import initAnimaScroll from './modules/animacao-scroll.js';
-import initSmoothScroll from './modules/scroll-suave.js';
+import SmoothScroll from './modules/scroll-suave.js';
 import initAccordionList from './modules/accordion-list.js';
 import initTabContent from './modules/tab-content.js';
 import initModal from './modules/modal.js';
@@ -11,7 +11,10 @@ import initFetchBitcoin from './modules/fetch-bitcoin.js';
 import initFuncionamento from './modules/funcionamento.js';
 
 initAnimaScroll();
-initSmoothScroll();
+// Declarando e Inicializando o Scroll Suave
+const smoothScroll = new SmoothScroll('[data-navbar] a[href^="#"]');
+smoothScroll.init();
+
 initAccordionList();
 initTabContent();
 initModal();
