@@ -18,7 +18,9 @@ export default class SmoothScroll {
     const href = e.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
 
-    section.scrollIntoView(this.options);
+    if (section) {
+      section.scrollIntoView(this.options);
+    }
   }
 
   addLinkEvent() {
