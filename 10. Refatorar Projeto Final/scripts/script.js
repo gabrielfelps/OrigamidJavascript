@@ -4,7 +4,7 @@ import AccordionList from './modules/accordion-list.js';
 import TabNav from './modules/tab-content.js';
 import Modal from './modules/modal.js';
 import ToolTip from './modules/tooltip.js';
-import initDropdownMenu from './modules/dropdown-menu.js';
+import DropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import FetchBitcoin from './modules/fetch-bitcoin.js';
@@ -38,7 +38,13 @@ modal.init();
 const toolTip = new ToolTip('[data-tooltip]');
 toolTip.init();
 
-initDropdownMenu();
+// Declarando e Inicializando o Dropdown Menu
+const dropdownMenu = new DropdownMenu('[data-dropdown]', [
+  'touchstart',
+  'click',
+]);
+dropdownMenu.init();
+
 initMenuMobile();
 initFuncionamento();
 
