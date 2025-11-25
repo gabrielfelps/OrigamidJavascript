@@ -1,4 +1,4 @@
-import initAnimaScroll from './modules/animacao-scroll.js';
+import ScrollAnima from './modules/scroll-anima.js';
 import SmoothScroll from './modules/scroll-suave.js';
 import AccordionList from './modules/accordion-list.js';
 import TabNav from './modules/tab-content.js';
@@ -10,7 +10,10 @@ import fetchAnimais from './modules/fetch-animais.js';
 import FetchBitcoin from './modules/fetch-bitcoin.js';
 import initFuncionamento from './modules/funcionamento.js';
 
-initAnimaScroll();
+// Declarando e Inicializando o ScrollAnima
+const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
+scrollAnima.init();
+
 // Declarando e Inicializando o Scroll Suave
 const smoothScroll = new SmoothScroll('[data-navbar], a[href^="#"]');
 smoothScroll.init();
