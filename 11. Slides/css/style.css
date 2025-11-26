@@ -1,0 +1,5 @@
+/* General */
+@import './helper/global.css';
+
+/* Slide */
+@import './slide.css';
