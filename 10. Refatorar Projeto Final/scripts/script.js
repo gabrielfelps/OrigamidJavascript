@@ -9,6 +9,7 @@ import MenuMobile from './modules/menu-mobile.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import FetchBitcoin from './modules/fetch-bitcoin.js';
 import Funcionamento from './modules/funcionamento.js';
+import SlideNav from './modules/slide.js';
 
 // Declarando e Inicializando o ScrollAnima
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
@@ -59,3 +60,8 @@ funcionamento.init();
 
 fetchAnimais('../../animaisapi.json', '.numeros-grid');
 FetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
+
+// Slide
+const slide = new SlideNav('wrapper', 'slide');
+slide.init();
+slide.addControl('.custom-controls');
